@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Flow</title>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap">
+	<style>
+		body {
+			background-color: #1b1b1b;
+			color: #ffffff;
+			font-size: 24px;
+			font-family: 'Inter', sans-serif;
+			text-align: center;
+			padding-top: 100px;
+		}
+		button {
+			background-color: #161616;
+			color: #ffffff;
+			font-size: 20px;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+			margin-top: 20px;
+			font-family: 'Inter', sans-serif;
+		}
+        .hello {
+            background-color: #161616;
+            color: #ffffff;
+            padding: 20px;
+            margin: 0 auto;
+            width: 50%;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000000;
+            font-family: 'Inter', sans-serif;
+            cursor: pointer;
+        }
+        .hidden-text {
+            opacity: 0;
+            margin-top: 20px;
+            font-size: 16px;
+            transition: opacity 0.5s ease-in-out;
+            background-color: #161616;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000000;
+            font-family: 'Inter', sans-serif;
+        }
+        .hidden-text.show {
+            opacity: 1;
+        }
+	</style>
+</head>
+<body>
+    <div class="hello" onclick="document.getElementById('hidden-text-1').classList.toggle('show')">Flow For Today's Session</div>
+    <div id="hidden-text-1" class="hidden-text" onclick="document.getElementById('hidden-text-2').classList.toggle('show')">1. Assigning of roles: actor, script writer, director, video editor, production staff, narrator, cameraman</div>
+    <div id="hidden-text-2" class="hidden-text" onclick="document.getElementById('hidden-text-3').classList.toggle('show')">2. Deciding on which part of Ibong Adarna shows neocolonialism</div>
+	<div id="hidden-text-3" class="hidden-text" onclick="document.getElementById('hidden-text-4').classList.toggle('show')">3. Real world neocolonialism</div>
+	<div id="hidden-text-4" class="hidden-text" onclick="document.getElementById('hidden-text-5').classList.toggle('show')">4. Solution to neocolonialism</div>
+	<div id="hidden-text-5" class="hidden-text" onclick="document.getElementById('hidden-text-6').classList.toggle('show')">5. Discussing of characters</div>
+    <div id="hidden-text-6" class="hidden-text">Discussing of props and costumes</div>
+	<button onclick="window.location.href='file:///C:/Users/ASUS/Downloads/FIL7%20Q4%20-%20SLPG.pdf'">Open SLPG</button>
+</body>
+</html>
